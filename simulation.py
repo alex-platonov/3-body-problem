@@ -12,47 +12,47 @@ from IPython.display import HTML
 #warnings.filterwarnings('ignore')
 
 st.title('Three-Body Problem Simulation')
-st.image('https://raw.githubusercontent.com/alex-platonov/tech_analysis/main/problem.jpg')
+st.image('https://raw.githubusercontent.com/alex-platonov/3-body-problem/main/problem.jpg')
 st.write('Having watched the new Netflix series I entertained the idea of making a little simulation to this classic problem from the field of celestial mechanics.')
 
-st.subtitle('General Description of the Problem')
+st.subheader('General Description of the Problem')
 st.write('The three-body problem in celestial mechanics is a classical problem that aims to determine the motions of three celestial bodies based on their initial positions, velocities, and mutual gravitational attraction. This problem encapsulates the complexity and unpredictability inherent in a system where three bodies exert gravitational forces on each other, influencing their paths through space.')
 
-st.subtitle('Formal Description of the Problem')
+st.subheader('Formal Description of the Problem')
 st.write('Given three celestial bodies of masses �1m1​, �2m2​, and �3m3​, with initial positions and velocities in a three-dimensional space, the problem involves solving the equations of motion derived from Newtons laws of motion and universal gravitation. The gravitational force between each pair of bodies is proportional to the product of their masses and inversely proportional to the square of the distance between them. The challenge lies in predicting the trajectories of these bodies over time.')
 
-st.subtitle('Problematics')
+st.subheader('Problematics')
 st.markdown("""
 - Nonlinearity: The equations of motion for the three-body problem are inherently nonlinear due to the inverse square law of gravity, leading to complex behaviors and sensitivity to initial conditions.
 - No General Solution: Unlike the two-body problem, there is no general closed-form solution for the three-body problem, making exact predictions impossible for arbitrary initial conditions.
 - Chaos: Small changes in initial conditions can lead to vastly different outcomes, a hallmark of chaotic systems.
 """, unsafe_allow_html=True)
 
-st.subtitle('Possible Solutions')
+st.subheader('Possible Solutions')
 st.markdown("""
 - Numerical Simulation: The most common approach is using numerical methods to approximate the positions and velocities of the bodies at discrete time intervals.
 - Specialized Solutions: For specific initial conditions or configurations, like the Lagrange points or the Eulerian solutions for collinear bodies, exact solutions exist.
 - Regularization Techniques: Techniques to simplify the mathematical formulation and reduce computational errors in near-collision scenarios.
 """, unsafe_allow_html=True)
 
-st.subtitle('Special Cases and Approximation')
+st.subheader('Special Cases and Approximation')
 st.markdown("""
 - Restricted Three-Body Problem: Assumes one of the bodies has negligible mass, simplifying calculations and allowing for the analysis of Lagrange points.
 - Lagrange Points: Positions in an orbital configuration where a small object affected only by gravity can theoretically be stationary relative to two larger objects.
 """, unsafe_allow_html=True)
 
-st.subtitle('Historical Context')
+st.subheader('Historical Context')
 st.write('The three-body problem has been studied for centuries, with significant contributions from mathematicians like Newton, Euler, Lagrange, and Poincaré. Henri Poincaré work in the late 19th century revealed the problem inherent complexity and laid the groundwork for chaos theory.')
 
-st.subtitle('Implementation')
+st.subheader('Implementation')
 st.write('This simulation is implemented in Python, using numerical methods to approximate the complex interactions between three celestial bodies. The code relies on scientific libraries like NumPy and Matplotlib for calculations and visualizations, respectively.')
 
-st.subtitle('References')
+st.subheader('References')
 st.write('"Modelling the Three Body Problem in Classical Mechanics using Python" by Gaurav Deshmukh published in "Towards Data Science", 2019 https://towardsdatascience.com/modelling-the-three-body-problem-in-classical-mechanics-using-python-9dc270ad7767')
 st.write('"The three body problem" B. L. Badger https://blbadger.github.io/3-body-problem.html')
 
 
-st.subtitle('Simulation')
+st.subheader('Simulation')
 st.write('Please define the graviational constraint used for non-dimensionalization, making the equations of motion simpler to solve numerically or used already supplied values. Default value is 6.67408e-11 Gravitational constant in N-m2/kg2') 
 G = st.number_input('Enter G value:', value=6.67408e-11)  # Default value is 6.67408e-11 Gravitational constant in N-m2/kg2
 
@@ -289,4 +289,4 @@ gif_path = "three_body_problem.gif"
 repeatanim.save(gif_path, writer=PillowWriter(fps=20))
 st.image(gif_path)
 
-EOF
+#EOF
