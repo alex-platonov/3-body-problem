@@ -2,3 +2,5 @@ streamlit
 scipy
 matplotlib
 numpy
+IPython
+mpl_toolkits
