@@ -216,7 +216,7 @@ init_params = init_params.flatten()  # Flatten to make it a 1D array for the sol
 time_span = np.linspace(0, 20, 1000)  # Simulate for 20 units of time with 1000 points in between
 
 # Use scipy's ODE integrator to solve the three body equations
-three_body_sol = sci.integrate.odeint(ThreeBodyEquations, init_params, time_span, args=(G, m1, m2))
+three_body_sol = sci.integrate.odeint(ThreeBodyEquations, init_params, time_span, args=(G, m1, m2, m3))
 
 # Extract solutions for each star's position over time
 r1_sol = three_body_sol[:, :3]
