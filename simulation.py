@@ -8,6 +8,7 @@ from mpl_toolkits.mplot3d import Axes3D
 import numpy as np
 import scipy.integrate
 from IPython.display import HTML
+from matplotlib.animation import PillowWriter
 
 #warnings.filterwarnings('ignore')
 
