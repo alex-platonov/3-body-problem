@@ -48,10 +48,8 @@ st.subtitle('Implementation')
 st.write('This simulation is implemented in Python, using numerical methods to approximate the complex interactions between three celestial bodies. The code relies on scientific libraries like NumPy and Matplotlib for calculations and visualizations, respectively.')
 
 st.subtitle('References')
-st.write('"Modelling the Three Body Problem in Classical Mechanics using Python" by Gaurav Deshmukh published in "Towards Data Science", 2019')
-   https://towardsdatascience.com/modelling-the-three-body-problem-in-classical-mechanics-using-python-9dc270ad7767
-st.write('"The three body problem" B. L. Badger')
-   https://blbadger.github.io/3-body-problem.html
+st.write('"Modelling the Three Body Problem in Classical Mechanics using Python" by Gaurav Deshmukh published in "Towards Data Science", 2019 https://towardsdatascience.com/modelling-the-three-body-problem-in-classical-mechanics-using-python-9dc270ad7767')
+st.write('"The three body problem" B. L. Badger https://blbadger.github.io/3-body-problem.html')
 
 
 st.subtitle('Simulation')
