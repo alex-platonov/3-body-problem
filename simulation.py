@@ -81,7 +81,7 @@ v_nd = 30000  # Reference velocity, m/s
 t_nd = 79.91 * 365.25 * 24 * 3600  # Reference time, s
 
 st.markdown("""
-# Net constants derived from reference quantities, used in equations of motion
+Net constants derived from reference quantities, used in equations of motion
 K1 = G * t_nd * m_nd / (r_nd**2 * v_nd)
 K2 = v_nd * t_nd / r_nd
 """, unsafe_allow_html=True)
