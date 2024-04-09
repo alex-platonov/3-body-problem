@@ -178,7 +178,7 @@ v_com = (m1 * v1 + m2 * v2 + m3 * v3) / (m1 + m2 + m3)
 # Function that defines the equations governing the motion of the three bodies
 # The function takes the current state (positions and velocities) of the bodies, the time, and the masses
 # It returns the derivatives of the state (velocities and accelerations)
-def ThreeBodyEquations(w, t, G, m1, m2):
+def ThreeBodyEquations(w, t, G, m1, m2, m3):
     # Unpack the input array into position and velocity vectors for each body
     r1 = w[:3]
     r2 = w[3:6]
