@@ -28,6 +28,8 @@ The three-body problem has transcended its scientific origins to influence cultu
 
 ## Implementation
 This simulation is implemented in Python, using numerical methods to approximate the complex interactions between three celestial bodies. The code relies on scientific libraries like NumPy and Matplotlib for calculations and visualizations, respectively.
+The simulation produces a catchy graphics like this: 
+![Simulation](https://github.com/alex-platonov/3-body-problem/blob/main/simulation.gif)
 
 ## References
 - "Modelling the Three Body Problem in Classical Mechanics using Python" by Gaurav Deshmukh published in "Towards Data Science", 2019
