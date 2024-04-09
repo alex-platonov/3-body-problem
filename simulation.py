@@ -9,7 +9,7 @@ import numpy as np
 import scipy.integrate
 from IPython.display import HTML
 
-warnings.filterwarnings('ignore')
+#warnings.filterwarnings('ignore')
 
 st.title('Three-Body Problem Simulation')
 st.image('https://raw.githubusercontent.com/alex-platonov/tech_analysis/main/problem.jpg')
