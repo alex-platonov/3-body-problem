@@ -31,6 +31,8 @@ This simulation is implemented in Python, using numerical methods to approximate
 The simulation produces a catchy graphics like this: 
 ![Simulation](https://github.com/alex-platonov/3-body-problem/blob/main/simulation.gif)
 
+An attempt to roll this out on Streamlit Cloud was undertaken, however, it seems that the present simulation and all entailed calculations are a bit heavy for the free platform. So should you desire to experiment on your own machine, or you have a Streamlit web server at hand - please use simulation.py file. 
+
 ## References
 - "Modelling the Three Body Problem in Classical Mechanics using Python" by Gaurav Deshmukh published in "Towards Data Science", 2019
    https://towardsdatascience.com/modelling-the-three-body-problem-in-classical-mechanics-using-python-9dc270ad7767
